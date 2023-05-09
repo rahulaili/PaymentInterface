@@ -69,7 +69,9 @@ public class PaymentInterface extends HttpServlet {
 			orderRequest.put("amount", amount*100);
 			orderRequest.put("currency", "INR");
 			Order order;
-			razorpayClient = new RazorpayClient("rzp_test_lt4ElytWZgSxIV", "koOQdc68kszilHfgL1idPt2l");
+			//YOU HAVE TO GENERATE YOUR API KEY IN RAZORPAY
+			razorpayClient = new RazorpayClient("PLEASE ENTER YOUR RAZORPAY API KEY HERE", "PLEASE USE YOUR SECRET SCODE HERE");
+			
 			order = razorpayClient.Orders.create(orderRequest);
 			System.out.println(order);
 			
