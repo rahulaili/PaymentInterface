@@ -32,7 +32,7 @@ const payment = () => {
             console.log(response)
             if (response.status == "created") {
                 var options = {
-                    "key": "rzp_test_lt4ElytWZgSxIV", // Enter the Key ID generated from the Dashboard
+                    "key": "USE YOUR APPI KEY", // PLEASE USE YOUR OWN API KEY OF RAZORPAY
                     "amount": response.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
                     "currency": "INR",
                     "name": "Donation Center", //your business name
